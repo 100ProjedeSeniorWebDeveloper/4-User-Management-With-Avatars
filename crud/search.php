@@ -6,12 +6,7 @@
 <meta charset="utf-8">
 	
 <script>				
-
-         
-	
 	    $(function(){
-
-
 	    	$('.changable').mouseover(function  () {
 						$(this).attr('src',$(this).data('image2'))
 					})
@@ -19,7 +14,6 @@
 						$(this).attr('src',$(this).data('image'));
 					})
 					
-	
 	    $('td img').click(function  () {
 	    	$('.box img').attr('src',$(this).data('image3'));
 	    	$('.box').show();
@@ -33,8 +27,7 @@ table, th, td {
     border: 1px solid #ccc;
 }
 
-	
-	.box  {
+.box  {
 	position: fixed;
     width: 100%;
     top: 0;
@@ -57,8 +50,6 @@ table, th, td {
     padding: 20px 40px;
     border-radius: 10px;
 }
-    
-
 
 </style>
 
