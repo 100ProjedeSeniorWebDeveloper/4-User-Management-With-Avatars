@@ -17,8 +17,8 @@ CREATE TABLE IF NOT EXISTS `kullanici_bilgileri` (
   `email` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   `cep` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   `ek` text COLLATE utf8_turkish_ci NOT NULL,
- `image_80_80` text COLLATE utf8_turkish_ci NOT NULL,
-  `image_200_200` text COLLATE utf8_turkish_ci NOT NULL,
-  `image_300_300` text COLLATE utf8_turkish_ci NOT NULL, PRIMARY KEY (`id`)
+ `image_80_80` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+  `image_200_200` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+  `image_300_300` varchar(200) COLLATE utf8_turkish_ci NOT NULL, PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci AUTO_INCREMENT=1 ;
 
