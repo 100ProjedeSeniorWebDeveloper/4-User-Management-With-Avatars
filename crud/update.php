@@ -10,7 +10,11 @@ $id=$_GET["id"];
 $count=$musteri->rowCount();
 if($count>0){
 			
-			
+			foreach($musteri as $row)
+			{
+						$sil1=$row["image_80_80"];
+						$sil2=$row["image_200_200"];
+						$sil3=$row["image_300_300"];
 
 
 if(isset($_POST["ad"]) && isset($_POST["soyad"]) && isset($_POST["cep"]) && isset($_POST["email"]) && isset($_POST["ek"]))
@@ -27,7 +31,7 @@ if(isset($_POST["ad"]) && isset($_POST["soyad"]) && isset($_POST["cep"]) && isse
 	$update->execute(array($ad, $soyad, $cep, $email, $ek, $name_200_200,$name_80_80,$name_300_300,$id));
 	if($update)
 	{	
-	
+		
 		header("location:index.php");
 		unlink($sil1);
  		unlink($sil2);
@@ -35,11 +39,6 @@ if(isset($_POST["ad"]) && isset($_POST["soyad"]) && isset($_POST["cep"]) && isse
 		
 }	
 }
-foreach($musteri as $row)
-			{
-			$sil1=$row["image_80_80"];
-			$sil2=$row["image_200_200"];
-			$sil3=$row["image_300_300"];
 
 ?>
 
