@@ -1,9 +1,9 @@
-﻿-- phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump
 -- version 4.5.1
 -- http://www.phpmyadmin.net
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 12 Eyl 2016, 17:07:23
+-- Üretim Zamanı: 17 Eyl 2016, 07:25:14
 -- Sunucu sürümü: 10.1.13-MariaDB
 -- PHP Sürümü: 5.6.23
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Veritabanı: `proje3`
+-- Veritabanı: `proje4`
 --
 
 -- --------------------------------------------------------
@@ -32,16 +32,16 @@ CREATE TABLE `table1` (
   `surname` varchar(16) NOT NULL,
   `email` varchar(32) NOT NULL,
   `phonenum` varchar(11) NOT NULL,
-  `note` text NOT NULL
+  `note` text NOT NULL,
+  `photo` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Tablo döküm verisi `table1`
 --
 
-INSERT INTO `table1` (`id`, `name`, `surname`, `email`, `phonenum`, `note`) VALUES
-(1, 'Zekvan', 'Arslan', 'zkvnarsln@gmail.com', '05314983588', 'New Proje'),
-(3, 'Yunus', 'Baloğlu', 'yunusemrebaloglu@gmail.com', '05457927959', 'My best Friend');
+INSERT INTO `table1` (`id`, `name`, `surname`, `email`, `phonenum`, `note`, `photo`) VALUES
+(27, 'Zekvan', 'Arslan', 'zkvnarsln@gmail.com', '05314983588', 'I''m  Wep Developer', '57dccd2f55187.jpg');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
@@ -61,7 +61,7 @@ ALTER TABLE `table1`
 -- Tablo için AUTO_INCREMENT değeri `table1`
 --
 ALTER TABLE `table1`
-  MODIFY `id` int(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
